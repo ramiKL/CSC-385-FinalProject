@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../views/photos/brick-pattern-wallpaper-brick-wall-background-black-brick-wallpaper-free-vector.webp);
+    
+   
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 8%;
+    transition: 0.5s ease-in-out;
+    
+}
+
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+nav:hover{
+    padding: 10px 8%;
+    background: #2f2f64;
+}
+
+nav:hover ul li a{
+    color: #fff;
+}
+
+.content{
+    color: #fff;
+    margin-top: 9%;
+    margin-left: 1%;
+    text-shadow: -3px 3px 40px #000;
+    
+    
+
+}
+
+.content h1{
+    
+    font-size: 250%;
+    text-transform: capitalize;
+    
+    
+}
+
+.content h1 span{
+    color: #2f2f64;
+    margin-right: 8%;
+}
+
+.content p{
+    max-width: 500px;
+    font-size: 30px;
+    margin: 20px 0;
+    opacity: 0;
+}
+
+
+
+
+.links{
+    margin-top: 30px;
+    opacity: 0;
+}
+
+.links a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn{
+    border: 2px solid #fff;
+    padding: 10px 35px;
+    margin-right: 15px;
+    border-radius: 30px;
+}
+.btn:hover{
+    border-color: #FFB84C;
+    color: #FFB84C;}
+
+.slide-left{
+    animation: slideleft 1s linear forwards;
+}
+
+@keyframes slideleft{
+    0%{
+        transform: translate(100px);
+        opacity: 0;
+    }
+   100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+p.slide-left{
+    animation-delay: 1s;
+}
+
+.links.slide-left{
+    animation-delay: 2s;
+}
+
+.social-media{
+    display: flex;
+    justify-content: start;
+    padding-top: 30px;
+}
+.social-icon{
+    height: 46px;
+    width: 46px;
+    border: 1px solid #b91a1a;
+    margin: 0 0.45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #b91a1a;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    
+}
+
+.social-icon:hover{
+    color:#A31ACB;
+    background-color: #f1f5f1;
+}
+
+
+
